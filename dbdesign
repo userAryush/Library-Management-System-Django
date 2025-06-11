@@ -1,0 +1,26 @@
+user(abstract user) for members
+    -username
+    -full_name
+    -college_id
+    -email
+    -role(admin,member) admin can add,edit,delete,update books or borrowing details, and user can just view available books and borrow one if he has not taken books before.
+
+
+Books
+    -title
+    -author
+    -published_year
+    -genre
+    -total_book
+    -available_book
+    -borrowed books (with the user who borrowed id and name)
+    -created_at
+    -updated_at
+    -created_by
+    -updated_by
+
+Borrow
+    -student_id
+    -book(fk)
+    -borrowed_date
+    -deadline_date   (borrowed_date + 14 days)
