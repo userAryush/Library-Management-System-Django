@@ -41,7 +41,7 @@ class Books(models.Model):
     genre = models.CharField(max_length=50, choices = GENRE_CHOICES)
     total_books = models.PositiveIntegerField(default=0) #allows numbers from 0 
     available_books = models.PositiveIntegerField(default=0)
-    #add image if possible at last
+    #add image if at last if doing frontend also
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
