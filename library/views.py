@@ -11,11 +11,15 @@ class BooksViewSet(ModelViewSet):
     queryset = Books.objects.all()
     # data should be in json format when requesting so we use serializer to convert obj into json format
     serializer_class = BooksSerializer
+    filterset_fields = ["author","genre"]
+    search_fields = ["title","author","genre"]
     
 class BorrowViewSet(ModelViewSet):
     queryset = Borrow.objects.all()
     # data should be in json format when requesting so we use serializer to convert obj into json format
     serializer_class = BorrowSerializer
+    filterset_fields = ["user"]
+    
     
   
     

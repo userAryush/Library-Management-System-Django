@@ -6,6 +6,7 @@ class BooksSerializer(ModelSerializer):
     class Meta:
         model = Books
         fields = '__all__'
+        
 class BorrowSerializer(ModelSerializer):
     class Meta:
         model = Borrow
