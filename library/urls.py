@@ -6,4 +6,6 @@ urlpatterns = [
     path('books-set/<int:pk>/',BooksViewSet.as_view({'get':'retrieve','put':'update','delete':'destroy'})), #retrive gets only one by id 
     path('books-borrow/',BorrowViewSet.as_view({'get':'list','post':'create'})), 
     path('books-borrow/',BorrowViewSet.as_view({'get':'retrieve','put':'update','delete':'destroy'})), 
+    path('login/', login), 
+    path('register/', register), 
 ]

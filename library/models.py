@@ -11,7 +11,7 @@ class User(AbstractUser):
     user_type = models.CharField(max_length=6, choices=ROLE)
     
     USERNAME_FIELD ='email'
-    REQUIRED_FIELDS = ['username', 'full_name', 'college_id', 'user_type']
+    REQUIRED_FIELDS = ['username', 'college_id']
     
 class Books(models.Model):
     GENRE_CHOICES = [
