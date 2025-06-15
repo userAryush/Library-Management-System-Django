@@ -8,4 +8,5 @@ urlpatterns = [
     path('books-borrow/',BorrowViewSet.as_view({'get':'retrieve','put':'update','delete':'destroy'})), 
     path('login/', login), 
     path('register/', register), 
+    path('group-listing/', group_listing), 
 ]
